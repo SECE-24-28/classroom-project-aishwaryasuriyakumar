@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Full Example</title>
+    <style>
+        .box { background: #f3f3f3; padding: 10px; }
+        span { color: red; }
+        img { width: 300px; height: auto; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- ⭐ HEADING TAGS -->
+    <h1>Heading H1</h1>
+    <h2>Heading H2</h2>
+    <h3>Heading H3</h3>
+    <h4>Heading H4</h4>
+    <h5>Heading H5</h5>
+    <h6>Heading H6</h6>
+
+    <!-- ⭐ IMAGE TAG -->
+    <h2>Image Example</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Sample Image">
+
+    <!-- ⭐ PARAGRAPH + INLINE TAGS -->
+    <h2>Paragraph & Inline Elements</h2>
+    <p>
+        This is a <b>bold</b> paragraph with <i>italic</i> text,
+        <u>underlined</u> text, a <span>highlighted span</span>,
+        <strong>strong text</strong>, <em>emphasized text</em>,
+        and a <mark>marked (highlighted)</mark> word.
+    </p>
+
+    <!-- ⭐ SEMANTIC TAGS -->
+    <header><h2>Header Section</h2></header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Section Content</h3>
+            <article>
+                <p>This is inside an article tag.</p>
+            </article>
+        </section>
+
+        <aside>
+            <p>This is an aside section (sidebar).</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Website Footer</p>
+    </footer>
+
+    <!-- ⭐ NON-SEMANTIC TAGS -->
+    <div class="box">
+        <b>Bold Text</b><br>
+        <i>Italic Text</i><br>
+        <u>Underlined Text</u><br>
+        <span>Highlighted using span</span>
+    </div>
+
+    <!-- ⭐ IFRAME -->
+    <h2>Iframe Example</h2>
+    <iframe src="https://www.wikipedia.org" width="500" height="250" frameborder="1"></iframe>
+
+    <!-- ⭐ ALL LIST TYPES -->
+    <h2>All List Types</h2>
+
+    <!-- 1️⃣ UNORDERED LIST -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- 2️⃣ ORDERED LIST -->
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Step One</li>
+        <li>Step Two</li>
+        <li>Step Three</li>
+    </ol>
+
+    <!-- 3️⃣ ORDERED LIST WITH TYPES -->
+    <h3>Ordered List – Types</h3>
+    <ol type="A">
+        <li>Option A</li>
+        <li>Option B</li>
+    </ol>
+
+    <ol type="a">
+        <li>Option a</li>
+        <li>Option b</li>
+    </ol>
+
+    <ol type="I">
+        <li>Roman One</li>
+        <li>Roman Two</li>
+    </ol>
+
+    <ol type="i">
+        <li>roman one</li>
+        <li>roman two</li>
+    </ol>
+
+    <!-- 4️⃣ DESCRIPTION LIST -->
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>- HyperText Markup Language</dd>
+
+        <dt>CSS</dt>
+        <dd>- Cascading Style Sheets</dd>
+    </dl>
+
+    <!-- 5️⃣ NESTED LIST -->
+    <h3>Nested List</h3>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+
+        <li>Vegetables
+            <ol>
+                <li>Potato</li>
+                <li>Carrot</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- ⭐ FORM WITH VALIDATION -->
+    <h2>Form with Validation</h2>
+
+    <form action="#" method="POST">
+        <label>Name (required):</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email (valid format):</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Age (18–60):</label>
+        <input type="number" name="age" min="18" max="60" required><br><br>
+
+        <label>Phone (10 digits):</label>
+        <input type="text" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS<br><br>
+
+        <label>Upload Resume:</label>
+        <input type="file" name="resume" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
