@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Full Example</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name = "author" content="Aishwarya S R"/>
+    <meta name= "description" content="Learning HTML for Full stack"/>
+    <meta name = "keywords" content="HTML, CSS, JavaScript, Fullstack,MERN"/>
+    <meta http-equiv="refresh"content = "10";url =https://codehubnexus.com/"/>
+
+    <title>HTML learning!</title>
     <style>
         .box { background: #f3f3f3; padding: 10px; }
         span { color: red; }
@@ -10,8 +16,53 @@
     </style>
 </head>
 <body>
+    <a href ="./txt1.html" target="_blank">visit my website</a>
+    <a href ="#a">Pixel</a>
+    <table border ="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            </thead>
+        </tbody>
+        <tr>
+            <td>Aishwarya</td>
+            <td>18</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td>Arjun</td>
+            <td>16</td>
+            <td>Chennai</td>
+            </tr>
+    </tbody>
+</table>
+            
+<table border="2">
+    <tr>
+        <th>Name</th>
+        <td>Aishwarya</td>
+        <td>Arjun</td>
+    </tr>
 
-    <!-- ⭐ HEADING TAGS -->
+    <tr>
+        <th>Age</th>
+        <td>18</td>
+        <td>16</td>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <td>Bangalore</td>
+        <td>Chennai</td>
+    </tr>
+</table>
+
+
+    <!-- Block Level TAGS -->
+    <!-- HEADING TAGS -->
     <h1>Heading H1</h1>
     <h2>Heading H2</h2>
     <h3>Heading H3</h3>
@@ -19,11 +70,11 @@
     <h5>Heading H5</h5>
     <h6>Heading H6</h6>
 
-    <!-- ⭐ IMAGE TAG -->
+    <!-- IMAGE TAG -->
     <h2>Image Example</h2>
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Sample Image">
 
-    <!-- ⭐ PARAGRAPH + INLINE TAGS -->
+    <!-- PARAGRAPH + INLINE TAGS -->
     <h2>Paragraph & Inline Elements</h2>
     <p>
         This is a <b>bold</b> paragraph with <i>italic</i> text,
@@ -32,7 +83,7 @@
         and a <mark>marked (highlighted)</mark> word.
     </p>
 
-    <!-- ⭐ SEMANTIC TAGS -->
+    <!-- SEMANTIC TAGS -->
     <header><h2>Header Section</h2></header>
 
     <nav>
@@ -58,7 +109,7 @@
         <p>Website Footer</p>
     </footer>
 
-    <!-- ⭐ NON-SEMANTIC TAGS -->
+    <!--  NON-SEMANTIC TAGS -->
     <div class="box">
         <b>Bold Text</b><br>
         <i>Italic Text</i><br>
@@ -66,14 +117,14 @@
         <span>Highlighted using span</span>
     </div>
 
-    <!-- ⭐ IFRAME -->
+    <!--  IFRAME -->
     <h2>Iframe Example</h2>
     <iframe src="https://www.wikipedia.org" width="500" height="250" frameborder="1"></iframe>
 
-    <!-- ⭐ ALL LIST TYPES -->
+    <!-- ALL LIST TYPES -->
     <h2>All List Types</h2>
 
-    <!-- 1️⃣ UNORDERED LIST -->
+    <!-- UNORDERED LIST -->
     <h3>Unordered List</h3>
     <ul>
         <li>Apple</li>
@@ -143,6 +194,7 @@
     <h2>Form with Validation</h2>
 
     <form action="#" method="POST">
+        <legend>Registration Form</legend><br>
         <label>Name (required):</label>
         <input type="text" name="name" required><br><br>
 
