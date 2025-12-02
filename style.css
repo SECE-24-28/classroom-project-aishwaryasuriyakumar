@@ -1,0 +1,24 @@
+h1{
+    background-color:green;
+}
+
+#a{
+    color:red;
+    background-color:yellow;
+}
+
+b{
+    border:10px solid;
+}
+div p{
+    color:red;
+    background-color: yellow;   
+}
+div > p{
+    color: green;
+    background-color: blue;
+}
+button[type="submit"]{
+    color:red;
+    font-size:32px;
+}
