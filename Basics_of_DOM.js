@@ -35,17 +35,35 @@ console.log(d);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Read n Write operation:
-let head = document.querySelector("p");
+// //Read n Write operation:
+// let head = document.querySelector("p");
 
-//Read operation
-console.log(head.textContent);
+// //Read operation
+// console.log(head.textContent);
 
-//Write operation
-head.textContent = "This is the new paragraph content";
+// //Write operation
+// head.textContent = "This is the new paragraph content";
 
-let div = document.querySelector("div");
-div.innerHTML = "<p>Hello From Para</p>";
-//div.textContent ="<p>HEllo from para</p>";
-console.log(div.textContent);
-console.log(div.innerHTML);
+// let div = document.querySelector("div");
+// div.innerHTML = "<p>Hello From Para</p>";
+// //div.textContent ="<p>HEllo from para</p>";
+// console.log(div.textContent);
+// console.log(div.innerHTML);
+
+
+//add/remove/toggle class
+//toggle means combination of both add n remove
+//if the class is already existing then, remove
+//if the class is not present, then add the class
+
+let head = document.querySelector("h1");
+console.log(head);
+
+head.classList.add("color");
+head.classList.remove("border");
+head.classList.toggle("background");
+
+//styling 
+let p = document.querySelector("p");
+p.style.color = "red";
+p.style.backgroundColor = "green";
