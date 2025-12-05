@@ -34,3 +34,18 @@ console.log(d);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Read n Write operation:
+let head = document.querySelector("p");
+
+//Read operation
+console.log(head.textContent);
+
+//Write operation
+head.textContent = "This is the new paragraph content";
+
+let div = document.querySelector("div");
+div.innerHTML = "<p>Hello From Para</p>";
+//div.textContent ="<p>HEllo from para</p>";
+console.log(div.textContent);
+console.log(div.innerHTML);
