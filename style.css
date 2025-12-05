@@ -1,24 +1,70 @@
+/* 1.universal selector*/
+*{
+    /* border: 1px solid red; */
+}
+
+/*tag selector*/
 h1{
-    background-color:green;
-}
+    background-color:skyblue}
 
+/* id selector # */
 #a{
-    color:red;
-    background-color:yellow;
+    color:black;
+    background-color:pink;
 }
 
-b{
+/* class selector .*/
+.b{
+    /* color:blue;*/
     border:10px solid;
 }
+
+/* group selector , */
+h1,h2{
+    color:blueviolet;
+}
+
+/*descendent selector*/
 div p{
     color:red;
-    background-color: yellow;   
+    background-color: yellow;
 }
-div > p{
-    color: green;
-    background-color: blue;
-}
+
+/* attribute selector*/
 button[type="submit"]{
     color:red;
     font-size:32px;
 }
+button[type="reset"]{
+    color:red;
+    font-size:32px;
+}
+  li:nth child(2){
+    color:red;
+    font-size:38px;
+
+  }
+  #r::first-letter{
+    content: "Written by css";
+  }
+  .b::first-letter{
+    font-size: 48px;
+    color:red;
+  }
+  #q{
+    display:block;
+  }
+  #q::first-letter{
+    font-size:48px;
+    color:red;
+  }
+  #q{
+    display:block;
+  }
+  *{
+    padding:0;
+    margin:0;  }
+    h1:nth-child(1){
+        border:3px solid red;
+        
+    }
